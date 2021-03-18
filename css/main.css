@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/roboto-black-webfont.woff2"), url("../fonts/Roboto/roboto-black-webfont.woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SourceSancPro";
+  src: url("../fonts/SourceSancPro/sourcesanspro-regular-webfont.woff2"), url("../fonts/SourceSancPro/sourcesanspro-regular-webfont.woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #000;
+  font-family: SourcSancePro, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.btn {
+  padding: 0 25px;
+  height: 44px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header {
+  height: 100vh;
+  background-image: url(../img/cover_image.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
+@media (max-width: 480px) {
+  .header {
+    background-position: center bottom;
+  }
+}
+
+.header .container {
+  max-width: 1146px;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 480px) {
+  .header .container {
+    max-width: 333px;
+  }
+}
+
+.header .container .header-top {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 56px;
+}
+
+@media (max-width: 480px) {
+  .header .container .header-top {
+    padding-top: 41px;
+  }
+}
+
+.header .container .header-top .header-top__logo {
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.header .container .header-top .header-top__autor {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+  .header .container .header-top .header-top__autor span {
+    display: none;
+  }
+}
+
+.header .container .header-top .header-top__autor img {
+  margin-left: 15px;
+}
+
+.header .container .header-content {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  max-width: 460px;
+}
+
+@media (max-width: 480px) {
+  .header .container .header-content {
+    top: 128px;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .header .container .header-content .header-content__title img {
+    width: 279px;
+  }
+}
+
+.header .container .header-content .header-content__sub-title {
+  margin: 15px 0 9px;
+}
+
+@media (max-width: 480px) {
+  .header .container .header-content .header-content__sub-title {
+    margin: 13px 0;
+  }
+}
+
+.header .container .header-content .header-content__sub-title span {
+  color: #404040;
+  line-height: 140%;
+  margin-right: 2px;
+}
+
+.header .container .header-content .header-content__sub-title span:last-child {
+  margin-right: 0;
+  font-size: 14px;
+  border: 1px solid #404040;
+}
+
+.header .container .header-content .header-content__review {
+  margin-bottom: 36px;
+}
+
+@media (max-width: 480px) {
+  .header .container .header-content .header-content__review {
+    margin-bottom: 19px;
+  }
+}
+
+.header .container .header-content .header-content__review p {
+  font-size: 21px;
+  line-height: 140%;
+}
+
+@media (max-width: 480px) {
+  .header .container .header-content .header-content__review p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .container .header-content .header-content__btn {
+    display: flex;
+  }
+}
+
+.header .container .header-content .header-content__btn .btn-preorder {
+  background-color: #EA6E20;
+  margin-right: 15px;
+}
+
+.header .container .header-content .header-content__btn .btn-watch {
+  background-color: #2F2F2F;
+  background-image: url(../img/btn_icon.png);
+  background-repeat: no-repeat;
+  background-position: 26px center;
+  padding-left: 48px;
+}
+
+@media (max-width: 480px) {
+  .header .container .header-content .header-content__btn .btn-watch {
+    width: 64px;
+    padding: 0;
+    background-position: center center;
+  }
+  .header .container .header-content .header-content__btn .btn-watch span {
+    display: none;
+  }
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal .btn-close {
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  right: 20px;
+  background-color: #2F2F2F;
+}
+
+.modal .video {
+  padding: 15px;
+  max-width: 1280px;
+}
+
+.modal .video video {
+  width: 100%;
+}
+
+.modal-open {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+/*# sourceMappingURL=main.css.map */
